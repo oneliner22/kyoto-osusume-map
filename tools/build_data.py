@@ -42,7 +42,7 @@ SPOTS = [
 
 
 # ぽこピー関連の店（地図・一覧・詳細に 🥜 を付ける）
-MARK = {"nakajima", "que-pasa"}
+MARK = {"nakajima", "que-pasa", "chuka-sakai"}
 # Places の websiteUri が公式でないもの（グルメサイト）は載せない
 NOT_OFFICIAL = ("hotpepper.jp", "gnavi.co.jp", "tabelog.com")
 # url_check.py（safe_url）の結果で差し替えたもの。http → https の最終URL、None は載せない
