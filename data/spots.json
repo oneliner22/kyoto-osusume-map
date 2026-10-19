@@ -1,0 +1,209 @@
+{
+ "areas": [
+  {
+   "id": "kawaramachi",
+   "name": "四条河原町・烏丸",
+   "color": "#e8543f"
+  },
+  {
+   "id": "gion",
+   "name": "祇園・東山・清水",
+   "color": "#7b5cd6"
+  },
+  {
+   "id": "rakuhoku",
+   "name": "洛北・哲学の道",
+   "color": "#2f9e7d"
+  },
+  {
+   "id": "uji",
+   "name": "宇治",
+   "color": "#3f7fd6"
+  }
+ ],
+ "spots": [
+  {
+   "slug": "green-terrace",
+   "name": "グリーンテラス",
+   "area": "rakuhoku",
+   "cat": "ごはん",
+   "lat": 35.023544,
+   "lng": 135.796578,
+   "approx": false,
+   "desc": "丁寧なおばんざいがいただける。気候によってはテラス席が気持ちいい。カヌレもおすすめ。",
+   "address": "京都市左京区鹿ケ谷法然院町７２",
+   "photos": [
+    "photos/green-terrace-1.jpg",
+    "photos/green-terrace-2.png",
+    "photos/green-terrace-3.png"
+   ],
+   "sources": []
+  },
+  {
+   "slug": "hokkyokusei",
+   "name": "北極星",
+   "area": "kawaramachi",
+   "cat": "ごはん",
+   "lat": 35.003532,
+   "lng": 135.769713,
+   "approx": false,
+   "desc": "定番オムライスがいただける。",
+   "address": "京都市下京区四条通河原町東入真町６８ 京都住友ビルディング ７Ｆ",
+   "photos": [
+    "photos/hokkyokusei.jpg"
+   ],
+   "sources": []
+  },
+  {
+   "slug": "restaurant-star",
+   "name": "レストランスター",
+   "area": "kawaramachi",
+   "cat": "ごはん",
+   "lat": 35.004902,
+   "lng": 135.767119,
+   "approx": false,
+   "desc": "オムライスの種類が豊富。パフェもある。",
+   "address": "京都市中京区中之町５３９ 1階",
+   "photos": [
+    "photos/restaurant-star.jpg"
+   ],
+   "sources": []
+  },
+  {
+   "slug": "chuka-sakai",
+   "name": "中華サカイ",
+   "area": "rakuhoku",
+   "cat": "ごはん",
+   "lat": 35.044685,
+   "lng": 135.748735,
+   "approx": false,
+   "desc": "冷やし中華がおいしい。麺がいい。",
+   "address": "京都市北区紫野上門前町９２",
+   "photos": [
+    "photos/chuka-sakai.jpg"
+   ],
+   "sources": []
+  },
+  {
+   "slug": "swan",
+   "name": "すわん",
+   "area": "uji",
+   "cat": "ごはん",
+   "lat": 34.889127,
+   "lng": 135.800289,
+   "approx": false,
+   "desc": "街の洋食屋さん。宇治に行くなら考えてみても。",
+   "address": "宇治市宇治宇文字２−３３",
+   "photos": [
+    "photos/swan.jpg"
+   ],
+   "sources": []
+  },
+  {
+   "slug": "sugari",
+   "name": "和醸良麺 すがり",
+   "area": "kawaramachi",
+   "cat": "ごはん",
+   "lat": 35.00427,
+   "lng": 135.757301,
+   "approx": false,
+   "desc": "おいしいラーメン屋さん。古民家っぽい空間も良い。",
+   "address": "京都市中京区室町新町の間錦小路下ル観音堂町４７１−１",
+   "photos": [
+    "photos/sugari.jpg"
+   ],
+   "sources": []
+  },
+  {
+   "slug": "soiree",
+   "name": "ソワレ",
+   "area": "kawaramachi",
+   "cat": "喫茶・甘味",
+   "lat": 35.004171,
+   "lng": 135.770338,
+   "approx": false,
+   "desc": "空間がよい。",
+   "address": "京都市下京区西木屋町通四条上る真町９５",
+   "photos": [
+    "photos/soiree-1.png",
+    "photos/soiree-2.png"
+   ],
+   "sources": []
+  },
+  {
+   "slug": "gion-koishi",
+   "name": "祇園小石 祇園本店",
+   "area": "gion",
+   "cat": "喫茶・甘味",
+   "lat": 35.003935,
+   "lng": 135.776715,
+   "approx": false,
+   "desc": "抹茶パフェがよい。",
+   "address": "京都市東山区祇園町北側２８６−２",
+   "photos": [
+    "photos/gion-koishi.png"
+   ],
+   "sources": []
+  },
+  {
+   "slug": "ikkyuan",
+   "name": "一休庵",
+   "area": "gion",
+   "cat": "喫茶・甘味",
+   "lat": 35.004062,
+   "lng": 135.77998,
+   "approx": false,
+   "desc": "円山公園の中にある。わらび餅の食べ比べができる。",
+   "address": "京都市東山区円山町官有地",
+   "photos": [
+    "photos/ikkyuan.png"
+   ],
+   "sources": []
+  },
+  {
+   "slug": "itoken-sousou",
+   "name": "伊藤軒／SOU・SOU 清水店",
+   "area": "gion",
+   "cat": "食べ歩き",
+   "lat": 34.996494,
+   "lng": 135.780838,
+   "approx": false,
+   "desc": "かわいいお菓子がある。",
+   "address": "京都市東山区清水３丁目３１５ 清水焼安田",
+   "photos": [
+    "photos/itoken-sousou.jpg"
+   ],
+   "sources": []
+  },
+  {
+   "slug": "nakajima",
+   "name": "夷川餃子なかじま 団栗店",
+   "area": "gion",
+   "cat": "ごはん",
+   "lat": 35.00195,
+   "lng": 135.771974,
+   "approx": false,
+   "desc": "いい感じの餃子定食がいただける。",
+   "address": "京都市東山区六軒町２０６−１ どんぐり会館 1階",
+   "photos": [
+    "photos/nakajima.jpg"
+   ],
+   "sources": []
+  },
+  {
+   "slug": "que-pasa",
+   "name": "ケパサ",
+   "area": "kawaramachi",
+   "cat": "ごはん",
+   "lat": 35.019858,
+   "lng": 135.769593,
+   "approx": false,
+   "desc": "いい感じのメキシコ料理（ブリトーなど）がいただける。",
+   "address": "京都市上京区河原町通荒神口下る上生洲町２４１ シャーメゾン河原町 荒神口1階",
+   "photos": [
+    "photos/que-pasa.jpg"
+   ],
+   "sources": []
+  }
+ ]
+}
