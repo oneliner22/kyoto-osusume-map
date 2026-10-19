@@ -41,6 +41,19 @@ SPOTS = [
 ]
 
 
+# ぽこピー関連の店（地図・一覧・詳細に 🥜 を付ける）
+MARK = {"nakajima", "que-pasa"}
+# Places の websiteUri が公式でないもの（グルメサイト）は載せない
+NOT_OFFICIAL = ("hotpepper.jp", "gnavi.co.jp", "tabelog.com")
+# url_check.py（safe_url）の結果で差し替えたもの。http → https の最終URL、None は載せない
+URL_FIX = {
+    "chuka-sakai": "https://www.reimen.jp/",
+    "sugari": "https://www.sugari.net/",
+    "soiree": "https://www.soiree-kyoto.com/",
+    "que-pasa": None,  # Places の値は Facebook ページで、safe_url で確認できない（HTTP 400）
+}
+
+
 def short_addr(a):
     a = re.sub(r"^〒\d{3}-\d{4}\s*", "", a)
     return a.replace("京都府", "", 1)
@@ -49,12 +62,22 @@ def short_addr(a):
 spots = []
 for slug, name, area, cat, desc, photos, idx in SPOTS:
     p = log[slug][idx]
-    spots.append({
+    s = {
         "slug": slug, "name": name, "area": area, "cat": cat,
         "lat": round(p["location"]["latitude"], 6), "lng": round(p["location"]["longitude"], 6),
         "approx": False, "desc": desc, "address": short_addr(p["formattedAddress"]),
-        "photos": ["photos/" + f for f in photos], "sources": [],
-    })
+    }
+    hours = p.get("regularOpeningHours", {}).get("weekdayDescriptions")
+    if hours:
+        s["hours"] = hours
+    url = URL_FIX.get(slug, p.get("websiteUri"))
+    if url and not any(d in url for d in NOT_OFFICIAL):
+        s["url"] = url
+    if slug in MARK:
+        s["mark"] = True
+    s["photos"] = ["photos/" + f for f in photos]
+    s["sources"] = []
+    spots.append(s)
     for f in photos:
         assert (ROOT / "photos" / f).exists(), f
 
